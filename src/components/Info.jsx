@@ -31,7 +31,7 @@ const Info = () => {
     <div className='w-full lg:w-1/3 h-full border-b lg:border-b-0 lg:border-r border-border bg-card text-foreground font-monospace-body flex flex-col justify-center items-center p-4 sm:p-6 text-center space-y-4 '>
     <div className="relative mb-4 group w-24 h-24 sm:w-32 sm:h-32">
         <img
-          src="/src/assets/unname.jpg" 
+          src="/unname.jpg" 
           alt={`${name}'s profile photo`}
           className="w-full h-full rounded-full object-cover border-4 border-primary shadow-md"
         />
