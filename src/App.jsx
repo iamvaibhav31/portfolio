@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { ClickSpark } from './components/custom';
 import Terminal from './components/Terminal';
 import Info from './components/Info';
@@ -14,6 +15,7 @@ function App() {
         <Info />
         <Terminal />
       </div>
+      <Analytics />
     </ClickSpark>
   );
 }
