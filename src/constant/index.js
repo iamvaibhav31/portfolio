@@ -2,6 +2,7 @@
 export const commandMap = {
   HELP: 'help',
   ABOUT: 'summary',
+  ACHIEVEMENTS: 'achievements',
   EXPERIENCE: "experience",
   EDUCATION: "education",
   SKILLS: "skills",
@@ -12,6 +13,7 @@ export const commandMap = {
 export const commands = {
   [commandMap.HELP]: 'List of all available commands',
   [commandMap.ABOUT]: 'About me',
+  [commandMap.ACHIEVEMENTS]: 'My achievements',
   [commandMap.EXPERIENCE]: 'My work experience',
   [commandMap.EDUCATION]: 'My educational background',
   [commandMap.SKILLS]: 'My technical skills',
@@ -20,7 +22,16 @@ export const commands = {
 }
 
 export const portfolioInfo = {
-  [commandMap.ABOUT]: "Software development professional with ~2 years of experience in front-end and full-stack development, specializing in React.js and TypeScript. Currently focused on building modular, AI-driven platforms with role-based access, drag-and-drop flow builders, and real-time voice bot tools powered by OpenAI and Gemini. Integrated multichannel communication systems—including Facebook, WhatsApp, and Email—alongside voice and transcription modules to enable seamless agent-customer interactions. Reduced manual effort and significantly improved support response times for over 200 enterprise clients. Seeking a Software Development Engineer role at KaptureCX to apply this expertise in building scalable, high-performance React applications that elevate customer engagement.",
+  [commandMap.ABOUT]: "Software Development Engineer with 2+ years of experience delivering scalable, AI-driven web platforms using React, Javascript, TypeScript, and Redux. Proven expertise in building voice bots, multi-agent voice systems, and no-code flow builders integrated with Generative AI (OpenAI, Gemini), real-time communication (WebSocket), and TTS/STT services. Skilled in optimizing code for speed, delivering high-quality results, and collaborating with cross-functional teams to achieve project milestones.",
+  [commandMap.ACHIEVEMENTS]: [
+    {
+      "title": "Vitos (AI Voice & Chat Platform)",
+      "description": [
+        "Built AI-driven voice bots and multi-agent voice solutions leveraging React, TypeScript, Redux, LLMs (OpenAI, Gemini), WebSockets, and cloud-based TTS/STT pipelines, resulting in 35% higher response rates and 25% faster resolution across 200+ agents.",
+        "Created a no-code visual flow builder using React Flow, enabling drag-and-drop orchestration, conditional routing, multilingual conversations, and real-time prompt tuning, improving conversational accuracy by 25% at enterprise scale."
+      ]
+    }
+  ],
   [commandMap.EXPERIENCE]: [
     {
       "company": "Kapture CX",
@@ -28,13 +39,11 @@ export const portfolioInfo = {
       "location": "Bengaluru",
       "date": "Dec 2023 – Present",
       "responsibilities": [
-        "Developed a modular workspace platform using React, Redux, and TypeScript with full CRUD support, role-based access control, and custom builder modules.",
-        "Built no-code tools including a drag-and-drop flow builder and a voice bot builder with LLM integration (OpenAI, Gemini, etc.).",
-        "Engineered 50+ reusable UI components to accelerate development by 50% and maintain design consistency.",
-        "Refactored legacy CRM features into modern React components, reducing load times by 20%.",
-        "Integrated multichannel support (Facebook, WhatsApp, Email) reducing response times by 30% for 200+ enterprise clients.",
-        "Implemented real-time function calls and advanced prompt control for enhanced bot responsiveness.",
-        "Configured voice and transcription modules with Azure, Google, and Deepgram."
+        "Delivered AI-powered voice and chat automation systems using React, TypeScript, Redux, React Flow, and LLM integrations, supporting multilingual workflows, real-time orchestration, and visual configuration, driving a 35% uplift in response rates and 25% reduction in resolution time.",
+        "Architected a scalable UI ecosystem with 50+ reusable components, shared libraries, dynamic API-driven configurations, and no-code builders, accelerating feature delivery by 30–50% while maintaining enterprise-grade design consistency.",
+        "Unified multichannel customer communication platforms including WhatsApp, Facebook, Instagram, LinkedIn, Email, and YouTube into a single inbox with agent templates and media handling, boosting agent productivity by 45% and cutting response times by 30% for 200+ clients.",
+        "Streamlined CRM and data-intensive modules such as Ticket View, Ticket List, Email Split, and Master Data Manager by introducing efficient pagination, sorting, and bulk operations, reducing load times by 20–35% and setup effort by 40% for over 1,000 users.",
+        "Enforced role-based access control, workflow governance, and content moderation in collaboration with design, backend, QA, and ML teams, shortening delivery cycles by 25%, and strengthening platform security.",
       ]
     },
     {
@@ -107,7 +116,6 @@ export const basicPortfolioInfo = {
   },
   "location": "Bengaluru, India",
   "profiles": [
-    { "url": "https://vaibhav-sharma-portfolio.vercel.app/", "platform": "portfolio" },
     { "platform": "linkedin", "url": "https://www.linkedin.com/in/vaibhavsharma31/"},
     { "platform": "github", "url": "https://github.com/iamvaibhav31"  },
     { "platform": "leetcode", "url": "https://leetcode.com/u/vaibhav_3108/" }
@@ -116,6 +124,6 @@ export const basicPortfolioInfo = {
 }
 
 
-export const commandList = [ commandMap.ABOUT , commandMap.EXPERIENCE , commandMap.EDUCATION , commandMap.SKILLS , commandMap.PROJECTS  ]
+export const commandList = [ commandMap.ABOUT , commandMap.EXPERIENCE , commandMap.EDUCATION , commandMap.SKILLS , commandMap.PROJECTS , commandMap.ACHIEVEMENTS  ]
 
 
